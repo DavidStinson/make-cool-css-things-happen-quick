@@ -1,0 +1,59 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #3030 3e;
+  font-family: sans-serif;
+  margin: 0;
+  color: white
+}
+
+.heading {
+  height: 72px;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.main {
+  height: calc(100vh - 72px);
+  width: 100vw;
+  border: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.section {
+  width: 45vw;
+  margin: 2.5vw;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.codeContainer {
+  box-sizing: content-box;
+  width: 40ch;
+  padding: 3ch;
+  border-radius: 7px;
+  background-color: lightsteelblue;
+  font-size: 15px;
+  color: black;
+}
+
+.code {
+  font-family: "Cascadia Mono", "Cascadia Mono PL", Monaco, Menlo,
+    SFMono-Regular, Consolas, "Droid Sans Mono", monospace;
+}

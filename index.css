@@ -1,0 +1,30 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+
+}
+
+body {
+  background-color: grey;
+}
+
+body.dark {
+  
+}
+
+.main{
+
+}
+
+
+#border-box {
+  box-sizing: border-box;
+}
+
+#no-border-box {
+
+}

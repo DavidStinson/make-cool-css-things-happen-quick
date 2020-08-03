@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/border-box.css">
+  </head>
+  <body>
+    <h1 class="heading">
+      <span class="code">box-sizing: border-box </span><span> vs. </span
+      ><span class="code">box-sizing: content-box</span>
+    </h1>
+    <main class="main">
+      <section class="section">
+        <h2>
+          Typical Preferred Behavior
+        </h2>
+        <p class="code codeContainer">
+          #borderBox {<br />
+          &nbsp;&nbsp;box-sizing: border-box;<br />
+          &nbsp;&nbsp;background-color: whitesmoke;<br />
+          &nbsp;&nbsp;height: 200px;<br />
+          &nbsp;&nbsp;width: 200px;<br />
+          &nbsp;&nbsp;padding: 35px;<br />
+          &nbsp;&nbsp;margin: 20px;<br />
+          &nbsp;&nbsp;border: 15px black solid;<br />
+          }
+        </p>
+        <div class="boxSurround">
+          <div id="borderBox">Border Box Content! Border Box Content!</div>
+        </div>
+        <h3>
+          The total height/width of the above box is 240px.
+        </h3>
+        <p>
+          200px as specified by the height<br />
+          +40px margin (the red border).<br /><br />
+          The total height and width of the black border and everything within
+          it is 200px.
+        </p>
+      </section>
+      <section class="section">
+        <h2>
+          Default Behavior
+        </h2>
+        <p class="code codeContainer">
+          #contentBox {<br />
+          &nbsp;&nbsp;box-sizing: content-box;<br />
+          &nbsp;&nbsp;background-color: whitesmoke;<br />
+          &nbsp;&nbsp;height: 200px;<br />
+          &nbsp;&nbsp;width: 200px;<br />
+          &nbsp;&nbsp;padding: 35px;<br />
+          &nbsp;&nbsp;margin: 20px;<br />
+          &nbsp;&nbsp;border: 15px black solid;<br />
+          }
+        </p>
+        <div class="boxSurround">
+          <div id="contentBox">
+            Content Box Content! Content Box Content! Content Box Content!
+            Content Box Content! Content Box Content! Content Box Content!
+            Content Box Content!
+          </div>
+        </div>
+        <h3>
+          The total height/width of the above box is 340px.
+        </h3>
+        <p>
+          200px as specified by the height<br />
+          +70px of padding<br />
+          +30px black border<br />
+          +40px margin (the red border).<br /><br />
+          The total height and width of the black border and all of it's content
+          is 200px.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

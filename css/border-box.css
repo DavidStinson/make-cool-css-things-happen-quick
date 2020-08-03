@@ -1,0 +1,24 @@
+.boxSurround {
+  background-color: brown;
+  color: black;
+}
+
+#borderBox {
+  box-sizing: border-box;
+  background-color: whitesmoke;
+  height: 200px;
+  width: 200px;
+  padding: 35px;
+  margin: 20px;
+  border: 15px black solid;
+}
+
+#contentBox {
+  box-sizing: content-box;
+  background-color: whitesmoke;
+  height: 200px;
+  width: 200px;
+  padding: 35px;
+  margin: 20px;
+  border: 15px black solid;
+}
