@@ -57,3 +57,8 @@ body {
   font-family: "Cascadia Mono", "Cascadia Mono PL", Monaco, Menlo,
     SFMono-Regular, Consolas, "Droid Sans Mono", monospace;
 }
+
+
+a:visited {
+  color: white;
+}
