@@ -53,11 +53,23 @@ body {
   color: black;
 }
 
+.col-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+}
+
 .code {
   font-family: "Cascadia Mono", "Cascadia Mono PL", Monaco, Menlo,
     SFMono-Regular, Consolas, "Droid Sans Mono", monospace;
 }
 
+a {
+  color: white;
+  font-size: 18px;
+}
 
 a:visited {
   color: white;

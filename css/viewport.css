@@ -1,0 +1,40 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #30303e;
+  font-family: sans-serif;
+  margin: 0;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+main {
+  height: 90%;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+  background-color: rgba(255, 255, 255, .6);
+  border-radius: 16px;
+}
+
+h1 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
